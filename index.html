@@ -19,43 +19,74 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
   </head>
   <body>
     <!-- =======================header start========================= -->
-    <header class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 col-lg-2 header__logo temp">
-            <a href="#">
-              <h1 class="">Hosting Company Landing</h1>
-            </a>
-          </div>
-
-          <div class="col-6 header__menu temp">
-            <ul>
-              <li><a href="#home" onclick="addOpen()">About</a></li>
-              <li><a href="#servics" onclick="addOpen()">Services</a></li>
-              <li><a href="#port" onclick="addOpen()">Works</a></li>
-              <li><a href="#blog" onclick="addOpen()">Blog</a></li>
-            </ul>
-            <i
-              class="fa-solid fa-xmark d-sm-none position-absolute"
-              id="header__close"
-              onclick="addOpen()"
-            ></i>
-          </div>
-
-          <div class="col-8 col-md-6 col-lg-4 header__btn temp">
-            <i
-              class="fa-solid fa-bars d-sm-none"
-              id="#header__bars"
-              onclick="addOpen()"
-            ></i>
-          </div>
+    <nav id="desktop-nav">
+      <div class="logo">Hosting Company Landing</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#" class="active"><span>Landing</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hosting Company Landing</div>
+      <div class="hamburger-menu">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+          <li><a href="#service" onclick="toggleMenu()">Service</a></li>
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="#landing" class="active" onclick="toggleMenu()">Landing</a>
+          </li>
         </div>
       </div>
-    </header>
+    </nav>
     <!-- =======================header  end ========================= -->
+    <!-- =======================home start ========================= -->
+    <section id="home">
+      <div class="main-content temp section">
+        <div class="section__text">
+          <h1>Premium Hosting Services</h1>
+          <p>
+            Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae donec velit
+            neque
+          </p>
+          <div class="btn"><button>GET WEB HOSTING</button></div>
+        </div>
+
+        <div class="home__image">
+          <img src="./images/home-image.png" alt="Hosting Company Image" />
+        </div>
+      </div>
+    </section>
+    <!-- =======================home end ========================= -->
     <!-- ------script link------ -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

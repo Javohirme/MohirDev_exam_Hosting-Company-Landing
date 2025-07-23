@@ -1,9 +1,0 @@
-/* laptop version: [768px; 991px]*/
-@media (max-width: 991.5px) {
-  /* header start  */
-
-  .header__menu {
-    justify-content: center;
-  }
-}
-/* header end  */
