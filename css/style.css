@@ -98,7 +98,7 @@ a {
 .hamburger-menu {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .hamburger-icon {
@@ -196,15 +196,16 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   gap: 2rem;
   flex-wrap: wrap;
 }
+
 /* Left Home Content */
 .section__text {
   flex: 1;
-  min-width: 280px;
+  min-width: 17.5rem;
 }
 
 .section__text h1 {
@@ -219,9 +220,9 @@ section {
 
 .section__text button {
   background-color: #263547;
-  font-size: 13px;
-  padding: 14px 38px;
-  border-radius: 5px;
+  font-size: 0.81rem;
+  padding: 0.875rem 2.375rem;
+  border-radius: 0.3125rem;
   border-width: 0px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -238,12 +239,57 @@ section {
 /* Right Home Content */
 .home__image {
   flex: 1;
-  min-width: 280px;
+  min-width: 17.5rem;
   text-align: center;
 }
 
 .home__image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   height: auto;
+}
+
+/* Prices Section */
+.prices_section {
+  display: flex;
+  margin: 6.25rem 0;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  justify-content: start;
+  width: 70%;
+}
+
+.prices_section div {
+  width: 8.8125rem;
+}
+
+.prices_section > div {
+  flex: 1 1;
+}
+
+.domain {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.dot {
+  color: #2970fa;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.ext {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: black;
+}
+
+.price {
+  display: block;
+  color: gray;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 4px;
 }
