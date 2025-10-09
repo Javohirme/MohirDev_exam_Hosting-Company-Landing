@@ -20,7 +20,8 @@ html {
 
 .section__text h1,
 .section__text p,
-.section__text button {
+.section__text button,
+.services__text button {
   color: #fff;
 }
 
@@ -37,6 +38,8 @@ p {
 .section__text p,
 .section__text button,
 /*  */
+.services__text button
+/*  */
 .menu-links.open {
   text-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
 }
@@ -47,6 +50,14 @@ a,
 .menu-links,
 .menu-links.open {
   transition: all 300ms ease;
+}
+
+/* Title */
+.tt {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* Desktop Nav */
@@ -165,6 +176,7 @@ a {
 
 /* Sections */
 section {
+  display: block;
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
@@ -180,15 +192,27 @@ section {
 #home {
   display: flex;
   justify-content: center;
-  background-image: url("../images/home_bg.png"),
-    linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: calc(100vh - 80px);
   padding-top: 100px;
   padding-bottom: calc(10vw + 100px);
   margin: 0;
-  height: 131vh;
+  min-height: 200vh;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+  background-image: url("../images/home_bg.png"),
+        linear-gradient(237deg, #46b3ff 0%, #0752fe 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+   
 }
 
 .main-content {
@@ -218,7 +242,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
-.section__text button {
+.section__text button, .services__text button {
   background-color: #263547;
   font-size: 0.81rem;
   padding: 0.875rem 2.375rem;
@@ -228,11 +252,11 @@ section {
   text-transform: uppercase;
   font-weight: bold;
 }
-.section__text button:hover {
+.section__text button:hover, .services__text button:hover {
   background-color: #1f2a3c;
   cursor: pointer;
 }
-.section__text button:active {
+.section__text button:active, .services__text button:active {
   background-color: #1a1f2e;
 }
 
@@ -293,3 +317,4 @@ section {
   font-size: 0.875rem;
   margin-top: 4px;
 }
+

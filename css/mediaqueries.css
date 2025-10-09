@@ -1,4 +1,5 @@
 @media screen and (max-width: 1400px) {
+  
 }
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -8,12 +9,11 @@
   #hamburger-nav {
     display: flex;
   }
-
-  @media screen and (max-width: 1200px) {
-    .prices_section {
+  
+  .prices_section {
       width: 100%;
-    }
   }
+  
 
   #profile,
   .section-container {
